@@ -1,0 +1,87 @@
+
+/* PAGE & BODY */
+* {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+    background-image: url(bg.png);
+  }
+  
+  body {
+    display: flex;
+    align-items: center; justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  /* WIDGET */
+  .widget-wrap {
+    width: 600px;
+    padding: 30px; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  h1{
+    color: #a00c0c;
+  }
+  
+  /* FOOTER */
+  #code-boxx {
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  #code-boxx a {
+    display: inline-block;
+    border: 0;
+    padding: 5px;
+    text-decoration: none;
+    background: #b90a0a;
+    color: #5e4c4c;
+  }
+  /* (A) WRAPPER */
+  #quizWrap {
+    max-width: 600px;
+    margin: 0 auto;
+    /* RECOMMENDED FIXED HEIGHT IF YOU HAVE CONTENT BELOW THE QUIZ */
+    /* SO THAT PAGE LAYOUT DOES NOT "JUMP" */
+    /* height: 250px; */
+  }
+  
+  /* (B) QUESTION */
+  #quizQn {
+    padding: 20px;
+    background: #a6cfe4;
+    color: #130f0f;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+  
+  /* (C) ANSWERS */
+  #quizAns {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  #quizAns input[type=radio] { display: none; }
+  #quizAns label {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  #quizAns label.correct {
+    background: lightgreen;
+    border: 1px solid #9ee879;
+  }
+  #quizAns label.wrong {
+    background: #ee3939;
+    border: 1px solid #c78181;
+  }
+  
